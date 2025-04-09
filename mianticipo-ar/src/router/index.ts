@@ -6,11 +6,15 @@
 
 // Composables
 import { createRouter, createWebHistory } from 'vue-router/auto'
-import { routes } from 'vue-router/auto-routes'
+import { routes as autoRoutes } from 'vue-router/auto-routes'
+import wizardRoutes from './wizard'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+  routes: [
+    ...autoRoutes,
+    ...wizardRoutes
+  ],
 })
 
 // Workaround for https://github.com/vitejs/vite/issues/11804

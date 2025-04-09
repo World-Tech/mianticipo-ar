@@ -1,0 +1,122 @@
+.full-container-onboarding {
+  width: 100%;
+  height: 100%;
+  background: white;
+
+  .important-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+
+    .text-important {
+      color: #0e6e42;
+      font-size: 32px;
+      font-family: "Roboto" Condensed;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+      margin: 2rem 0 1rem 0;
+    }
+
+    .text-agilize {
+      color: #17250a;
+      font-size: 24px;
+      font-family: "Roboto";
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .text-aseg {
+      color: #17250a;
+      font-size: 16px;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+      margin: 1rem 0 2rem 0;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .card-onborad {
+      background-color: #f5fcf6;
+      border: 1px solid #ccefd2;
+      border-radius: 8px;
+      display: flex;
+      padding: 8px;
+      align-items: center;
+      opacity: 0; /* Initially hide all cards */
+      transform: translateX(-20px); /* Initial left offset for animation */
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      height: 100%;
+      width: 100%;
+      max-width: 320px;
+      gap: 16px;
+
+      &.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .number {
+        font-weight: bold;
+        color: black;
+        font-size: 30px;
+      }
+
+      .content {
+        text-align: left;
+
+        .title-card {
+          font-family: "Roboto";
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 120%;
+          letter-spacing: 0%;
+          color: #17250a;
+        }
+
+        .description-card {
+          font-family: "Roboto";
+          font-weight: 400;
+          color: #17250a;
+          font-size: 12px;
+          line-height: 120%;
+          letter-spacing: 0%;
+        }
+      }
+    }
+
+    .important-note {
+      font-family: "Roboto";
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #17250a;
+    }
+
+    .container-button-onboard{
+        width: 100%;
+        margin-top: 16px;
+    }
+  }
+}
